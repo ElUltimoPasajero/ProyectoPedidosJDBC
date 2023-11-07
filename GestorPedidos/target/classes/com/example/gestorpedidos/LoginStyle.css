@@ -1,0 +1,11 @@
+    #borderPane {
+        -fx-background-image: url("retro.png");
+        -fx-background-color: blue;
+        -fx-background-size: cover;
+    }
+
+    #vboxIzquierdo{
+
+        -fx-background-color:grey;
+
+    }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestorpedidos.ItemScreenController">
+   <center>
+      <TableView fx:id="tableItem" prefHeight="137.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn id="columnNombre" fx:id="columnItemName" prefWidth="140.0" style="-fx-background-color: #78fbfb;" text="NombreProducto" />
+          <TableColumn id="columnCantidad" fx:id="columnAmmount" prefWidth="120.0" style="-fx-background-color: #78fbfb;" text="Cantidad" />
+            <TableColumn id="columnPrecio" fx:id="columnPrice" prefWidth="127.0" style="-fx-background-color: #78fbfb;" text="Precio" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="69.0" prefWidth="380.0" style="-fx-background-color: #800187;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#LogOut" text="CerrarSesion" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
